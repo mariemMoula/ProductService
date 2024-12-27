@@ -14,6 +14,7 @@ public class ProductEventsHandler {
     @EventHandler
     public void on(ProductCreatedEvent productCreatedEvent) {
         ProductEntity product = new ProductEntity();
+        product.setProductId(productCreatedEvent.getProductId());
         product.setName(productCreatedEvent.getName());
         product.setPrice(productCreatedEvent.getPrice());
         product.setQuantity(productCreatedEvent.getQuantity());
