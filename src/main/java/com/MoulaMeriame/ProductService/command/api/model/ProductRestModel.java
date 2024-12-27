@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
+//eq DTO
 public class ProductRestModel {
     private String name;
     private double price;
